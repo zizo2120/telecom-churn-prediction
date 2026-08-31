@@ -16,3 +16,6 @@ Thumbs.db
 ~$*.docx
 ~$*.pptx
 ~$*.xlsx
+
+# Local tooling
+.claude/
