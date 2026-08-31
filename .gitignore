@@ -1,0 +1,13 @@
+# Dataset — provided under GCI course terms, not for public redistribution.
+# Place Client.csv and Record.csv in a local telecom/ folder to run the notebook.
+telecom/
+*.csv
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
