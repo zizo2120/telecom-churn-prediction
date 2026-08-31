@@ -11,7 +11,8 @@ framed around the Egyptian telecom market.
 
 - **Model:** XGBoost (`XGBClassifier`), selected over Logistic Regression and Random Forest
 - **Evaluation metric:** ROC-AUC — **0.679**
-- **Top churn driver:** `eqpdays` (device age) — strongest single correlation and top feature importance
+- **Top churn driver:** `eqpdays` (device age) — strongest single correlation with churn, and the top
+  *actionable* feature by importance (behind only account tenure, which isn't a lever the business can pull)
 - **Recommendation:** Device-upgrade retention campaign targeting aging-device customers,
   prioritized by model risk score and usage decline
 - **Quantified impact:** ~**$1.67M** gross annual revenue protected (before campaign costs), under a
