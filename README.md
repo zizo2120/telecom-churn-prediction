@@ -5,6 +5,8 @@ anonymized wireless telecom operator, this project runs EDA on ~100K customer re
 compares three churn-prediction models, and turns the results into a quantified business proposal
 framed around the Egyptian telecom market.
 
+![Proposal comparison — corrected revenue impact](docs/revenue_comparison.png)
+
 ## Results at a glance
 
 - **Model:** XGBoost (`XGBClassifier`), selected over Logistic Regression and Random Forest
@@ -20,8 +22,8 @@ framed around the Egyptian telecom market.
 
 | File | Description |
 |---|---|
-| [`Abdelaziz_2120.ipynb`](Abdelaziz_2120.ipynb) | Full analysis notebook: EDA, hypothesis testing, feature engineering, model training/evaluation, business proposal |
-| [`Abdelaziz_2120.pdf`](Abdelaziz_2120.pdf) | 11-slide executive presentation summarizing the proposal |
+| [`churn_analysis.ipynb`](churn_analysis.ipynb) | Full analysis notebook: EDA, hypothesis testing, feature engineering, model training/evaluation, business proposal |
+| [`executive_summary.pdf`](executive_summary.pdf) | 11-slide executive presentation summarizing the proposal |
 | [`docs/dataset_overview.docx`](docs/dataset_overview.docx) | Column dictionary provided by the client (Company A) describing the raw fields in `Client.csv` / `Record.csv` |
 | `requirements.txt` | Python dependencies |
 
@@ -40,7 +42,7 @@ The dataset (`Client.csv`, `Record.csv`) is provided under the course's data-sha
 
 1. Obtain `Client.csv` and `Record.csv` and place them in a `telecom/` folder alongside the notebook
 2. Install dependencies: `pip install -r requirements.txt`
-3. Run `Abdelaziz_2120.ipynb` top to bottom (the `DATA_DIR` cell defaults to `./telecom`; adjust if needed)
+3. Run `churn_analysis.ipynb` top to bottom (the `DATA_DIR` cell defaults to `./telecom`; adjust if needed)
 
 All plots are already saved as outputs in the notebook, so it can also be viewed directly on GitHub
 without re-running.
